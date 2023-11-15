@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'page3.dart';
 
 class Page2 extends StatelessWidget {
   const Page2({super.key});
@@ -18,7 +19,16 @@ class Page2 extends StatelessWidget {
                 onPressed: (){
                   Navigator.of(context).pop();
                 },
-                child: Icon(Icons.navigate_before, size:50.0))
+                child: Icon(Icons.navigate_before, size:50.0)),
+            const SizedBox(height: 25.0,),
+            ElevatedButton(
+                onPressed: (){
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context)=>const Page3())
+                  );
+                },
+                child: const Icon(Icons.navigate_next, size: 50,))
+
           ],
         ),
       ),
