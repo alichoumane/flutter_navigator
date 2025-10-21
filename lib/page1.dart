@@ -9,12 +9,26 @@ class Page1 extends StatefulWidget {
 }
 
 class _Page1State extends State<Page1> {
+
+  @override
+  void initState() {
+    print("In initState");
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    print("In dispose");
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Page 1"),
-        centerTitle: true,
+         backgroundColor: Colors.blue,
+         centerTitle: true,
       ),
       body: Center(
         child: Column(
