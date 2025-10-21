@@ -1,4 +1,3 @@
-import 'package:flutter/gestures.dart';
 import "package:flutter/material.dart";
 import 'page2.dart';
 import 'employee.dart';
@@ -19,6 +18,7 @@ class _Page1State extends State<Page1> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Page 1"),
+        backgroundColor: Colors.blue,
         centerTitle: true,
       ),
       body: Center(

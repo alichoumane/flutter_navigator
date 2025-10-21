@@ -11,6 +11,7 @@ class Page2 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Page 2"),
+        backgroundColor: Colors.blue,
         centerTitle: true,
       ),
       body: Center(
